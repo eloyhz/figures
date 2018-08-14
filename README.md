@@ -1,0 +1,2 @@
+# figures
+BlueJ figures example
