@@ -16,6 +16,7 @@ public class Circle
     private String color;
     private boolean isVisible;
     
+    public static final int DISTANCE = 20;
     /**
      * Create a new circle at default position with default color.
      */
@@ -27,6 +28,31 @@ public class Circle
         color = "blue";
     }
 
+    public int getX()
+    {
+        return xPosition;
+    }
+    
+    public int getY()
+    {
+        return yPosition;
+    }
+    
+    public String getColor()
+    {
+        return color;
+    }
+    
+    public boolean isVisible()
+    {
+        return isVisible;
+    }
+    
+    public int getDiameter()
+    {
+        return diameter;
+    }
+    
     /**
      * Make this circle visible. If it was already visible, do nothing.
      */
@@ -50,7 +76,7 @@ public class Circle
      */
     public void moveRight()
     {
-        moveHorizontal(20);
+        moveHorizontal(DISTANCE);
     }
 
     /**
@@ -58,7 +84,7 @@ public class Circle
      */
     public void moveLeft()
     {
-        moveHorizontal(-20);
+        moveHorizontal(-DISTANCE);
     }
 
     /**
@@ -66,7 +92,7 @@ public class Circle
      */
     public void moveUp()
     {
-        moveVertical(-20);
+        moveVertical(-DISTANCE);
     }
 
     /**
@@ -74,7 +100,7 @@ public class Circle
      */
     public void moveDown()
     {
-        moveVertical(20);
+        moveVertical(DISTANCE);
     }
 
     /**

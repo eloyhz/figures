@@ -15,6 +15,8 @@ public class Square
     private String color;
     private boolean isVisible;
 
+    public static final int DISTANCE = 20;
+    
     /**
      * Create a new square at default position with default color.
      */
@@ -27,6 +29,31 @@ public class Square
         isVisible = false;
     }
 
+    public int getX()
+    {
+        return xPosition;
+    }
+    
+    public int getY()
+    {
+        return yPosition;
+    }
+    
+    public String getColor()
+    {
+        return color;
+    }
+    
+    public boolean isVisible()
+    {
+        return isVisible;
+    }
+    
+    public int getSize()
+    {
+        return size;
+    }
+    
     /**
      * Make this square visible. If it was already visible, do nothing.
      */

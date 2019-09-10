@@ -16,6 +16,8 @@ public class Triangle
     private String color;
     private boolean isVisible;
 
+    public static final int DISTANCE = 20;
+
     /**
      * Create a new triangle at default position with default color.
      */
@@ -29,6 +31,36 @@ public class Triangle
         isVisible = false;
     }
 
+    public int getX()
+    {
+        return xPosition;
+    }
+    
+    public int getY()
+    {
+        return yPosition;
+    }
+    
+    public String getColor()
+    {
+        return color;
+    }
+    
+    public boolean isVisible()
+    {
+        return isVisible;
+    }
+    
+    public int getWidth()
+    {
+        return width;
+    }
+    
+    public int getHeight()
+    {
+        return height;
+    }
+    
     /**
      * Make this triangle visible. If it was already visible, do nothing.
      */

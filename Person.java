@@ -16,6 +16,8 @@ public class Person
     private String color;
     private boolean isVisible;
 
+    public static final int DISTANCE = 20;
+
     /**
      * Create a new person at default position with default color.
      */
@@ -28,7 +30,37 @@ public class Person
         color = "black";
         isVisible = false;
     }
-
+    
+    public int getX()
+    {
+        return xPosition;
+    }
+    
+    public int getY()
+    {
+        return yPosition;
+    }
+    
+    public String getColor()
+    {
+        return color;
+    }
+    
+    public boolean isVisible()
+    {
+        return isVisible;
+    }
+    
+    public int getWidth()
+    {
+        return width;
+    }
+    
+    public int getHeight()
+    {
+        return height;
+    }
+    
     /**
      * Make this person visible. If it was already visible, do nothing.
      */
